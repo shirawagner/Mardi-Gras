@@ -1,0 +1,54 @@
+footer{
+    // background-color: $black;
+    // background-image: url('/image/pexels-alleksana-6781808.jpg');
+    background-blend-mode: screen;
+    color: rgb(75, 72, 72);
+    font-size: 1.2rem;
+    
+    h6{
+        font-family: 'roboto';
+        font-size: 1.4rem;
+        color: $white;
+    }
+    a{
+        &:hover{
+            color: $yellow;
+            transition: all 1s ease-in-out;
+            font-size: 1.2em;
+        }
+       
+    }
+   
+    .top-footer{
+        list-style: none;
+        height: 50%;
+        background-color:$green;
+        h6{
+            font-family: 'pattaya';
+        }
+        button{
+            background-color: transparent;
+            border:0.5px solid $purple;
+            color: $purple;
+            font-size: 1em;
+            padding: 0.5em 1em;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            transition: all 1s ease;
+            
+            &:hover{
+                border: 1px solid $yellow;
+               
+            }
+        }
+    }
+    .bottom-footer{
+        letter-spacing: 1.3px;
+        background-color: #3cbf3ecc;
+        height: 30%;
+        width: 100%;
+        padding: 0;
+
+    }
+    
+}

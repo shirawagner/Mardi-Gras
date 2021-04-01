@@ -1,0 +1,172 @@
+
+.carousel-item{
+    height: 90vh;
+    background-color: $black;
+    color: $white;
+    position: relative;
+    
+    
+    .container{
+        position: absolute;
+        left:0;
+        right: 0;
+        bottom: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        padding: 1em;
+        text-align: center;
+     
+        
+        h1{
+            font-family: "henny penny";
+            letter-spacing: 1.5px;
+            font-size: 3rem;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 1em;
+            position: relative;
+            animation-name: slider-h;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            // top:-325px;
+          
+        }
+        @keyframes slider-h {
+            from{top:-325px;}
+            to {top:0px}
+        }
+        
+
+        p{
+            width: 100%;
+            line-height: 1.6;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: auto;
+            position: relative;
+            animation-name: slider-p;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            transition: all 1s ease;
+        }
+        @keyframes slider-p {
+            from{left:-325px;}
+            to {left:0px;}
+        }
+    }
+    .overlay-image{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.5;
+    }
+}
+
+
+section.top{
+    // height: 100vh;
+    background-color: $white;
+    // clip-path: polygon(50% 0%, 100% 0, 100% 71%, 0 100%, 0 0);
+    overflow: visible;
+}
+
+
+@media (max-width:768px){
+ .carousel-item{
+    .container{
+        h1{
+         font-size: 2rem;
+     }
+         p{
+             font-size: 1.2rem;          
+         }
+    }
+    
+ }
+ }  
+
+ .mobile-mode{
+     width: 100%;
+     background-color: $black;
+
+     text-align: center;
+     color: $white;
+     .mobile-mode-content{
+        width: 100%;
+        height: auto;
+        position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.6;
+        }
+        h1{
+            position: absolute;
+            left:0;
+           right: 0;
+           bottom: 50%;
+           margin: 0 auto;
+           width: 100%;
+           font-weight: bold;
+           color: $white;
+           font-family: 'henny penny',sans-serif;
+   
+        }
+     }
+
+   
+ }
+
+ section.main{
+     background-color: #FDF8E5;
+     img{
+         width: 80px;
+         transition: all 1s ease;
+         filter: grayscale(100%);
+        &:hover{
+            transform: scale(1.4);
+            filter: none;
+            
+        }
+     }
+ }
+
+ section.supponsers{
+    background-color: #fdf8e5d7;
+    img{
+        filter: brigtness(120%);
+    }
+    h1,h2{
+        font-family: 'pattaya';
+        color: $green;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    button{
+        width: 100px;
+        padding: 0.5em 1em;
+        letter-spacing: 1px;
+        font-family: roboto;
+        font-size: 1.1rem;
+        background-color: transparent;
+        border: 0.5px solid $green;
+        color: $green;
+        cursor: pointer;
+        transition: all 0.7s ease;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+ }
+
+ 

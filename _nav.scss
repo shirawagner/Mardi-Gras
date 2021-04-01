@@ -1,0 +1,57 @@
+@use 'default';
+img.logo{
+    background-color: transparent;
+    width: 20%;
+    transition: transform 3s ease;
+    &:hover{
+        transform: rotatey(360deg);
+    }
+}
+nav{
+    background-color: #FDF8E5;
+    font-size: 1.9rem;
+    font-family: 'pattaya'; 
+    font-weight: 100; 
+    letter-spacing: 1.5px;  
+    li{
+        transition: all 1s ease;
+        &:hover{
+            
+            font-size: 1.5em;
+        }
+        a{
+            color: $green !important;
+            &:last-child{
+                color: $purple !important;
+               
+            }
+            &:hover{
+                color: $green !important;
+               
+            }
+        }
+    }
+    ul.dropdown-menu{
+        background-color: transparent;
+        text-align: center;
+        li{
+          
+            a{
+                font-family: 'roboto';
+                font-weight: bold;
+                font-size: 1em;
+                color: $black !important;
+                background-color: transparent !important;
+                text-transform: uppercase;
+                &:hover{
+                    color: $yellow !important;
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
