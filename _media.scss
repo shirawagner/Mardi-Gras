@@ -1,0 +1,93 @@
+.media{
+    background-color: #FDF8E5;
+    .top-image{
+        font-family: 'roboto';
+        font-weight: 900;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            background-image: url(/image/pexels-alleksana-6781765.jpg);
+            // mix-blend-mode: screen;
+            // filter: grayscale(50%);
+            // filter: blur(2px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.6;
+        }
+        .content-media{
+            text-align: center;
+            
+            h1,h3{
+                position: relative;
+                color: $white;
+                margin: 1em;
+            }
+            h1{
+                font-size: 4em;
+            }
+        }
+      
+    }
+    div.media-nav{
+        display: flex;
+        position: sticky;
+        top: 0;
+        justify-content: center;
+        list-style: none;
+        background-color: #fafbfc;
+        padding: 1em;
+        
+        ul.ul-media{
+            list-style: none;
+            font-weight: 900;
+            color: $black;
+            li{
+                font-size: 2.5rem;
+                padding: 0.5em ;
+                letter-spacing: 1.2px;
+                font-family: 'pattaya';
+                a{
+                    color: $black;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        color: $yellow;
+                    }
+                }
+                
+            }
+           
+        }
+    }
+    .image-gallery{
+        // display: flex;
+        justify-content: center;
+        text-align: center;
+        // height: 100vh;
+        background-color: $white;
+        .image-gallery-content{
+            padding: 10rem 0 2em;
+
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+        }   
+           
+
+            
+            
+    
+       
+    }
+}
